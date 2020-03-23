@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b590ca;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fira Code', monospace;
+    font-weight: 300;
+    font-size: 20px;
+}
+div {
+    border-radius: 1000px;
+    overflow: hidden;
+    flex: none;
+    max-width: 100%;
+}
+@media (max-width: 900px) {
+    div {
+        border-radius: 20px;
+    }
+}
+span {
+    padding: 10px 30px;
+    display: block;
+    vertical-align: middle;
+    float: left;
+    color: #ffffff;
+}
+@media (max-width: 900px) {
+    span {
+        float: none;
+        width: 100%;
+    }
+}
+.w {
+    background-color: #a8d3da;
+}
+.h {
+    background-color: #f5cab3;
+}
+.s {
+    background-color: #f3ecb8;
+}
