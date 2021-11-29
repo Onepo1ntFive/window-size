@@ -34,6 +34,9 @@
             
         }, 5000);
 
+        document.querySelector('body').addEventListener('click', function(){
+            fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+        })
     </script>
     <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1596930030654009&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
