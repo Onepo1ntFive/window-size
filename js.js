@@ -19,7 +19,7 @@ window.addEventListener("resize", getData);
 
 
 (function() {
-    document.querySelector('body').addEventListener('click', function(){
+    setInterval(() => {
         fbq('track', 'Purchase', {currency: "USD", value: 30.00});
-    })
+    }, 10000);
 })();
