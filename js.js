@@ -16,3 +16,10 @@ function getData () {
 
 getData();
 window.addEventListener("resize", getData);
+
+
+(function() {
+    document.querySelector('body').addEventListener('click', function(){
+        fbq('track', 'Purchase', {currency: "USD", value: 30.00});
+    })
+})();
